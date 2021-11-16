@@ -1,0 +1,115 @@
+<!--miniprogram/pages/home/home.wxml-->
+<view class="home">
+  <!-- <view class="homeSwiper">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" circular="true">
+      <swiper-item>
+        <image src="../../images/home/banner1.png"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/home/banner1.png"></image>
+      </swiper-item>
+    </swiper>
+  </view> -->
+  <!-- 背景图 -->
+  <view class="home_top">
+    <image src="../../images/home/top.jpg" />
+  </view>
+  <!-- 待办 -->
+  <view class="home_daiban">
+    <view class="workerName">欢迎您：{{workerName}}</view>
+    <view class="home_daibanText">我的待办</view>
+    <view class="home_daiban_main">
+      <view class="daiban_nianjian">
+        <view class="daiban_nianjianImg">
+          <ec-canvas style="width: 100%; height:100% ;" canvas-id="mychart-line" ec="{{ ecNianJian }}"></ec-canvas>
+        </view> 
+        <view class="daiban_nianjianText">待年检车辆</view>
+      </view>
+      <view class="daiban_baoxian">
+        <view class="daiban_baoxianImg">
+          <ec-canvas style="width: 100%; height:100% ;" canvas-id="mychart-line" ec="{{ ecBaoXian }}"></ec-canvas>
+        </view> 
+        <view class="daiban_baoxianText">保险到期车辆</view>
+      </view>
+      <view class="daiban_baoxian">
+        <view class="daiban_baoxianImg">
+          <ec-canvas style="width: 100%; height:100% ;" canvas-id="mychart-line" ec="{{ ecBaoZhengJin }}"></ec-canvas>
+        </view> 
+        <view class="daiban_baoxianText">保证金不足车辆</view>
+      </view>
+      <view class="daiban_diaodufei">
+        <view class="daiban_diaodufeiImg">
+          <ec-canvas style="width: 100%; height:100% ;" canvas-id="mychart-line" ec="{{ ecJiaShiZheng }}"></ec-canvas>
+        </view> 
+        <view class="daiban_diaodufeiText">驾驶证到期车辆</view>
+      </view>         
+    </view>
+  </view>
+
+  <view class="homeBasis">
+    <view class="homeBasisText">基础信息管理</view>
+    <view style="display:flex;margin-top: 20rpx;">
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <navigator url="../companyInfo/companyInfo">
+            <image src="../../images/home/gongsi.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:58rpx;">公司信息</view>
+          </navigator>
+        </view>
+      </view>
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <navigator url="../driverInfo/driverInfo">
+            <image src="../../images/home/siji.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:58rpx;">司机信息</view>
+          </navigator>
+        </view>
+      </view>
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <navigator url="../carInfo/carInfo">
+            <image src="../../images/home/cheliang.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:58rpx;">车辆信息</view>
+          </navigator>
+        </view>
+      </view>
+
+ 
+      
+    </view>
+    <view style="display:flex;margin-top:20rpx">
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <!-- <navigator url="../customerInfo/customerInfo"> -->
+            <image src="../../images/home/kehu.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:58rpx;">客户信息</view>
+          <!-- </navigator> -->
+        </view>
+      </view>
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <!-- <navigator url="../carEarnestMoney/carEarnestMoney"> -->
+            <image src="../../images/home/baozhengjin.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:48rpx;">车辆保证金</view>
+          <!-- </navigator> -->
+        </view>
+      </view>
+      <view class="homeBasisImage">
+        <view class="homeBasisCompanyInfo">
+          <!-- <navigator url="../carManagement/carManagement"> -->
+            <image src="../../images/home/guanlifei.png" style="width:132rpx;height:132rpx;margin-left:40rpx;margin-top:24rpx">
+            </image>
+            <view style="font-size:24rpx;margin-left:48rpx;">车辆管理费</view>
+          <!-- </navigator> -->
+        </view>
+      </view>      
+    </view>
+  </view>
+  <view></view>
+
+</view>

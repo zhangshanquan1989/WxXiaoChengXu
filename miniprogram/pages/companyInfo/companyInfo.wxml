@@ -1,0 +1,48 @@
+<view class="page">
+  <view class="page__bd">
+    <mp-searchbar ext-class="searchClass" bindselectresult="selectResult" search="{{search}}"></mp-searchbar>
+  </view>
+  <view>
+    <view class="page__bd"  wx:for="{{companyList}}" wx:key="index" style="height: 88rpx;">
+      <navigator url="../companyInfoDetails/companyInfoDetails?companyId={{item.id}}">
+      
+      <mp-form id="form">
+        <mp-cells  >
+          <view style="display: flex;">
+            <view style="width: 46rpx;height: 46rpx;margin-top: 32rpx;margin-left: 24rpx;">
+              <image src="../../images/company/companyInfo.png" style="width: 100%;height: 100%;" ></image>
+            </view>
+            <view>
+              <mp-cell  ext-class="">
+                <input value="{{item.name}}" bindinput="formInputChange" disabled  class="weui-input"
+                  placeholder="请输入" style="width: 480rpx;"/>
+              </mp-cell>
+            </view>
+            <view class="xiangqingImageRow">
+            <image src="../../images/company/xiangqing.png" class="xiangqingImage"></image>
+          </view>
+          </view>
+        </mp-cells>
+      </mp-form>
+    </navigator>
+    </view>
+
+    <!-- <view wx:for="{{companyList}}" wx:key="index" style="height: 88rpx;">
+      <navigator url="../companyInfoDetails/companyInfoDetails?companyId={{item.id}}">
+        <view style="display: flex;">
+          <view class="logoimageRow">
+            <image src="../../images/company/公司信息-改色.png" class="logoimage"></image>
+          </view>
+          <view class="nameRow">{{item.name}}</view>
+          <view class="xiangqingImageRow">
+            <image src="../../images/company/完整详情.png" class="xiangqingImage"></image>
+          </view>
+        </view>
+        <view style="width: 608rpx;height: 3rpx;margin-left: 112rpx;margin-top: 25rpx;">
+          <image src="../../images/company/直线 343.png" style="width: 100%;height: 100%;"></image>
+        </view>
+
+      </navigator>
+    </view> -->
+  </view>
+</view>

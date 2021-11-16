@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "db guide",
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "首页",
+          "pathName": "pages/home/home",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "公司companyInfo",
+          "pathName": "pages/companyInfo/companyInfo",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "公司详情companyInfoDetails",
+          "pathName": "pages/companyInfoDetails/companyInfoDetails",
+          "query": "companyId=1",
+          "scene": null
+        },
+        {
+          "name": "司机详情driverInfoDetails",
+          "pathName": "pages/driverInfoDetails/driverInfoDetails",
+          "query": "driverId=528",
+          "scene": null
+        },
+        {
+          "name": "车辆信息carInfo",
+          "pathName": "pages/carInfo/carInfo",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

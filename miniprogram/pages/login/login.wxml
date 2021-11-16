@@ -1,0 +1,20 @@
+<image class="login_logo" src="../../images/login/login_logo.png" />
+<view class="name">
+    <image class="name_img" src="../../images/login/name.png" />
+    <view class="name_input">
+        <input bindinput="getUserName" placeholder="请输入用户名" class="userName"></input>
+    </view>
+</view>
+<view class="pass">
+    <image class="pass_img" src="../../images/login/password.png" />
+    <view class="pass_input">
+        <input bindinput="getPassword" type="password" placeholder="请输入密码" ></input>
+    </view>
+</view>
+<view class="yanzheng">
+<view class="yanzhengma">
+    <input class="yanzhengma_input" bindinput="getCaptcha" placeholder="验证码" ></input>
+</view>
+<image class="yanzhengma_img" bindtap="handleNewImg" src="{{randomImage}}"></image>
+</view>
+<button style="width:664rpx;"  bindtap="login">登录</button>

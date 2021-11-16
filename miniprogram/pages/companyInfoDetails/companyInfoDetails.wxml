@@ -1,0 +1,265 @@
+<view class="page"> 
+  <view class="page" style="margin-bottom: 20rpx;">
+    <view class="page__bd">
+      <mp-form id="form">
+        <mp-cells>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/gongsimingcheng.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">公司名称</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{info.name}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="法人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.personname}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/shoujihao.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">手机号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.phone}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/shenfenzheng.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">身份证号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.card}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="负责人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.head}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/shoujihao.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">手机号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.headphone}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          
+        </mp-cells>
+        <mp-cells title="行政负责人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.work}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/shoujihao.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">手机号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.workphone}}</view>
+              </mp-cell>
+            </view>
+          </view>          
+        </mp-cells>
+        <mp-cells title="公司信息">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/kaiyeshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">开业时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.opentime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/diqu.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">地区</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.address}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xiangxidizhi.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">详细地址</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.housenumber}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="创建人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.creater}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/chuangjianshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">创建时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.creatime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/zuijingengxinshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">最近更新</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{info.nearcreatime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+
+      </mp-form>
+
+    </view>
+  </view >
+  <!-- <view>
+    <button>修改</button>
+    <button>删除</button>
+  </view> -->
+</view>

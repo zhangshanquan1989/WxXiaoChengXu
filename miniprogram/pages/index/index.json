@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "mp-tabs": "@miniprogram-component-plus/tabs",
+    "mp-badge": "weui-miniprogram/badge/badge",
+    "mp-cell": "weui-miniprogram/cell/cell",
+    "mp-cells": "weui-miniprogram/cells/cells"
+  },
+  "navigationBarTitleText": "登录页"
+}

@@ -1,0 +1,74 @@
+/* miniprogram/pages/login/login.wxss */
+/* .userName{
+  background-color: aqua;
+} */
+
+.login_logo{
+  width: 260rpx;
+  height: 260rpx;
+  margin-left: 246rpx;
+  margin-top: 46rpx;
+}
+.name{
+  height: 92rpx;
+  width: 662rpx;
+  margin-left: 44rpx;
+  display: flex;
+  margin-top: 92rpx;
+  border-bottom: 1px solid #D2D2D2;
+}
+.name_img{
+  width: 28rpx;
+  height: 28rpx;
+  margin-top: 30rpx;
+}
+.name_input{
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+
+.pass{
+  height: 92rpx;
+  width: 662rpx;
+  margin-left: 44rpx;
+  margin-top: 20rpx;
+  display: flex;
+  border-bottom: 2rpx solid #D2D2D2;
+}
+.pass_img{
+  width: 32rpx;
+  height: 32rpx;
+  margin-top: 30rpx;
+}
+.pass_input{
+  margin-left: 20rpx;
+  margin-top: 30rpx;
+}
+.yanzheng{
+  display: flex;
+}
+.yanzhengma{
+  width: 332rpx;
+  height: 82rpx;
+  border: 2rpx solid #707070FF;
+  margin-top: 36rpx;
+  margin-left: 44rpx;
+}
+.yanzhengma_input{
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+}
+.yanzhengma_img{
+  width: 302rpx;
+  height: 82rpx;
+  border: 2rpx solid #707070FF;
+  margin-top: 36rpx;
+  margin-left: 28rpx;
+}
+
+button{
+  margin-top: 30rpx;
+  background-color: #5876ABFF;
+  color: white;
+  height:82rpx;
+}

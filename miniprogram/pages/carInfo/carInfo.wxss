@@ -1,0 +1,12 @@
+/* miniprogram/pages/carInfo/carInfo.wxss */
+.xiangqingImageRow {
+  width: 112rpx;
+  height: 52rpx;
+  /* margin-left: 10rpx; */
+  margin-top: 32rpx;
+}
+
+.xiangqingImage {
+  width: 100%;
+  height: 100%;
+}

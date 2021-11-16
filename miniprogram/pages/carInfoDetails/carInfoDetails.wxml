@@ -1,0 +1,272 @@
+<view class="page" style="padding-bottom: 20rpx;">
+  <view class="page" style="margin-bottom: 20rpx;">
+    <view class="page__bd">
+      <mp-form id="form">
+        <mp-cells title="车辆">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/chepaihao.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">车牌号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.licensePlate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/cheliangzhuangtai.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">车辆状态</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.carstate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="车主">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingmingA.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.name}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/shoujihao.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">手机号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.phoneno}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/suoshufengongsi.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">所属公司</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.companyl}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/duiyingsiji.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">对应司机</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.driver}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/shoujihao.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">司机电话</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.driverphone}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingmingA.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">负责配管</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{dispatch}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingshizhengyouxiaoqi.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 250rpx;">行驶证有效期</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.vehiclelicensedate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingshizhengyouxiaoqi.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 250rpx;">年检有效期</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.checkDate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/baoxianqizhiriqi.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 250rpx;">保险到期时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.insuranceDate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingshizhengyouxiaoqi.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 250rpx;">营运证到期时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.operatingdate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="创建人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/carDetail/xingmingA.png" style="width: 50rpx;height: 50rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell >
+                <view>{{carInfo.createuser}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/chuangjianshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">创建时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{carInfo.ctTime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/zuijingengxinshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">最近更新</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{carInfo.utTime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+      </mp-form>
+    </view>
+  </view>
+  <view style="margin-bottom: 30rpx;">
+  <button style="background-color:#1798ECFF;color: #fff;"  bindtap="searchCarPosition">查看车辆位置</button>
+  </view>
+</view>

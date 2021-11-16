@@ -1,0 +1,233 @@
+<view class="page">
+  <view class="page" style="margin-bottom: 20rpx;">
+    <view class="page__bd">
+      <mp-form id="form">
+        <mp-cells title="司机">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.name}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/shoujihao.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">手机号</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.phoneno}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/suoshufengongsi.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">所属公司</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.company}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">负责配管</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{dispatch}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/diqu.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">地区</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.region}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/duiyingcheliang.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">对应车辆</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.licensePlate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/jiaruriqi.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">驾驶证</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.drivingLicenseTime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/jiaruriqi.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">上岗证</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.worklicensedate}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 180rpx;">紧急联系人</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{emergencyname}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/driverDetail/shoujihao.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">紧急电话</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{emergencyphone}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+        <mp-cells title="创建人">
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/xingming.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">姓名</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.createuser}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/chuangjianshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">创建时间</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.ctTime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+          <view style="display: flex;">
+            <view>
+              <mp-cell >
+                <image src="../../images/companyDetail/zuijingengxinshijian.png" style="width: 46rpx;height: 46rpx;" ></image>
+              </mp-cell>
+            </view>
+            <view>
+              <mp-cell >
+                <view style="width: 150rpx;">最近更新</view>
+              </mp-cell>
+            </view>  
+            <view>
+              <mp-cell  ext-class="">
+                <view>{{driverInfo.utTime}}</view>
+              </mp-cell>
+            </view>
+          </view>
+        </mp-cells>
+      </mp-form>
+    </view>
+  </view>
+</view>

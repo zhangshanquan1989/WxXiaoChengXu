@@ -1,0 +1,38 @@
+/* miniprogram/pages/company/companyInfo.wxss */
+
+
+.logoimageRow {
+  width: 56rpx;
+  height: 56rpx;
+  margin-left: 40rpx;
+  margin-top: 16px;
+}
+
+.logoimage {
+  width: 100%;
+  height: 100%;
+}
+
+.nameRow {
+  width: 480rpx;
+  height: 88rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+  margin-left: 14rpx;
+  margin-top: 40rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.xiangqingImageRow {
+  width: 112rpx;
+  height: 52rpx;
+  /* margin-left: 10rpx; */
+  margin-top: 32rpx;
+}
+
+.xiangqingImage {
+  width: 100%;
+  height: 100%;
+}

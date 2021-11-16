@@ -1,0 +1,108 @@
+/* miniprogram/pages/home/home.wxss */
+page{
+  background-color: #F6F6F6;
+}
+.homeBasisCompanyInfo{
+  width: 212rpx;
+  height: 212rpx;
+  background-color: #ffffff;
+  margin-left: 28rpx;
+}
+
+.home_top image{
+  width: 100%;
+  height: 322rpx;
+}
+.home_daiban{
+  position: relative;
+}
+.workerName{
+  position: absolute;
+  width: 400rpx;
+  height: 34rpx;
+  left: 50rpx;
+  /* transform: translateX(-50%); */
+  top: -250rpx;
+  font-size: 36rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.home_daibanText{
+  position: absolute;
+  width: 136rpx;
+  height: 34rpx;
+  left: 50rpx;
+  /* transform: translateX(-50%); */
+  top: -160rpx;
+  font-size: 34rpx;
+  font-weight: 400;
+  color: #FFFFFF;
+  opacity: 1;
+}
+.home_daiban_main{
+  display: flex;
+  background-color: #ffffff;
+  position: absolute;
+  width: 91.8%;
+  height: 162rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -90rpx;
+  border-radius: 8px;
+  box-shadow: 2rpx 6rpx 10rpx #D7D7D7FF;
+}
+.daiban_nianjian{
+  width: 25%;
+  height: 100%;
+  font-size: 20rpx;
+
+}
+.daiban_nianjianImg{
+  width: 104rpx;
+  height: 104rpx;
+  margin-top: 16rpx;
+  margin-left: 36rpx;
+}
+.daiban_nianjianText{
+  margin-left: 38rpx;
+}
+
+.daiban_baoxian{
+  width: 25%;
+  height: 100%;
+  font-size: 20rpx;
+}
+.daiban_baoxianImg{
+  width: 104rpx;
+  height: 104rpx;
+  margin-top: 16rpx;
+  margin-left: 36rpx;
+}
+.daiban_baoxianText{
+  margin-left: 14rpx; 
+}
+.daiban_diaodufei{
+  width: 25%;
+  height: 100%;
+  font-size: 20rpx;
+}
+.daiban_diaodufeiImg{
+  width: 104rpx;
+  height: 104rpx;
+  margin-top: 16rpx;
+  margin-left: 36rpx;
+}
+.daiban_diaodufeiText{
+  margin-left: 14rpx; 
+}
+
+.homeBasis{
+  margin-top: 100rpx;
+}
+
+.homeBasisText{
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-left: 32rpx;
+}
